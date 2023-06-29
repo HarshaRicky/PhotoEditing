@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./edditing.css">
+    <script src="./editing.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="imgcont">
+           <img id="image" src="../assets/harsha.jpg.jpg">
+        </div>
+        <div id="filters">
+            <h1>Blur</h1>
+            <input type="range" id="blur" oninput="editImg()" value="0">
+            <h1>Brightness</h1>
+            <input type="range" id="brightness" oninput="editImg()" value="100" min="0" max="500">
+            <h1>Contrast</h1>
+            <input type="range" id="contrast" oninput="editImg()" value="100" min="0" max="500" >
+            <h1>Hue-rotate</h1>
+            <input type="range" id="hue-rotate" oninput="editImg()" value="0" min="0" max="360">
+            <h1>Saturaion</h1>
+            <input type="range" id="saturate" oninput="editImg()" value="100" min="0" max="500">
+            <h1>Grayscale</h1>
+            <input type="range" id="grayscale" oninput="editImg()" value="0" min="0" max="100">
+            <h1>Invert</h1>
+            <input type="range" id="invert" oninput="editImg()" value="0" min="0" max="100">
+            <h1>Opacity</h1>
+            <input type="range" id="opacity" oninput="editImg()" value="100" min="0" max="100">
+            <h1>Sepia</h1>
+            <input type="range" id="sepia" oninput="editImg()" value="0" min="0" max="100">
+        </div>
+        <div id="transform">
+            <h1>RotateX</h1>
+            <input type="range" id="rotatex" oninput="rotateImg()" value="0" min="0" max="180">
+            <h1>RotateY</h1>
+            <input type="range" id="rotatey" oninput="rotateImg()" value="0" min="0" max="180">
+            <h1>RotateZ</h1>
+            <input type="range" id="rotatez" oninput="rotateImg()" value="0" min="0" max="90">
+            <h1>Scale</h1>
+            <input type="range" id="scale" oninput="rotateImg()" value="0" min="1" max="10">
+            <h1>ScaleX</h1>
+            <input type="range" id="scalex" oninput="rotateImg()" value="0" min="1" max="10">
+            <h1>ScaleY</h1>
+            <input type="range" id="scaley" oninput="rotateImg()" value="0" min="1" max="10">
+            <h1>Skew</h1>
+            <input type="range" id="skew" oninput="rotateImg()" value="0" min="0" max="45">
+            <h1>SkewX</h1>
+            <input type="range" id="skewx" oninput="rotateImg()" value="0" min="0" max="45">
+            <h1>SkewY</h1>
+            <input type="range" id="skewy" oninput="rotateImg()" value="0" min="0" max="45">
+        </div>
+    </div>
+</body>
+</html>
